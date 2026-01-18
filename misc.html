@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賬號登錄 - 魔靈召喚攻略</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>魔靈召喚 攻略資料庫</h1>
+        <div class="nav">
+            <a href="index.html">首頁</a>
+            <a href="monsters.html">魔靈列表</a>
+            <a href="teams.html">隊伍參考</a>
+        </div>
+    </div>
+    <div class="container login-box">
+        <h2>賬號登錄</h2>
+        <div class="form-group">
+            <label>用戶名：</label>
+            <input type="text" id="username" placeholder="請輸入用戶名">
+        </div>
+        <div class="form-group">
+            <label>密碼：</label>
+            <input type="password" id="password" placeholder="請輸入密碼">
+        </div>
+        <button onclick="login()">登入</button>
+        <p id="login-msg" class="msg"></p>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

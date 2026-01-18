@@ -1,0 +1,59 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "微軟正黑體", sans-serif; }
+body { background: #1a1a1a; color: #fff; line-height: 1.6; padding-bottom: 50px; }
+a { color: #4fc3f7; text-decoration: none; }
+a:hover { color: #2196f3; }
+button { cursor: pointer; background: #2196f3; color: #fff; border: none; padding: 8px 16px; border-radius: 4px; font-size: 14px; }
+button:disabled { background: #666; cursor: not-allowed; }
+button.admin-btn { background: #f44336; }
+button.user-btn { background: #4caf50; }
+input, select, textarea { padding: 8px; border-radius: 4px; border: 1px solid #333; background: #2d2d2d; color: #fff; width: 100%; margin: 5px 0; }
+textarea { min-height: 80px; resize: vertical; }
+img { max-width: 100%; border-radius: 4px; }
+
+.header { background: #0f0f0f; padding: 15px; text-align: center; border-bottom: 2px solid #2196f3; }
+.nav { margin-top: 10px; }
+.nav a { margin: 0 10px; font-size: 16px; }
+.container { max-width: 1200px; margin: 20px auto; padding: 0 20px; }
+.form-group { margin: 15px 0; }
+.label { font-weight: bold; margin-bottom: 5px; display: block; }
+.msg { color: #f44336; margin-top: 10px; }
+.success { color: #4caf50; }
+.login-box { max-width: 400px; margin: 50px auto; background: #2d2d2d; padding: 30px; border-radius: 8px; }
+
+/* 魔靈樣式 */
+.monster-card { background: #2d2d2d; border-radius: 8px; padding: 15px; margin: 10px; display: inline-block; width: 180px; text-align: center; }
+.monster-img { width: 100px; height: 100px; border-radius: 50%; margin: 0 auto; object-fit: cover; }
+.monster-attr { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 12px; margin: 5px; }
+.attr-water { background: #2196f3; }
+.attr-fire { background: #f44336; }
+.attr-wind { background: #4caf50; }
+.attr-light { background: #ffc107; color: #000; }
+.attr-dark { background: #9c27b0; }
+
+/* 隊伍樣式 */
+.team-section { margin: 20px 0; }
+.team-tab { display: flex; gap: 5px; margin-bottom: 15px; flex-wrap: wrap; }
+.team-tab button { flex: 1; }
+.team-card { background: #2d2d2d; border-radius: 8px; padding: 15px; margin: 10px 0; }
+.team-name { font-size: 18px; font-weight: bold; margin-bottom: 10px; }
+.team-member-box { display: flex; gap: 10px; flex-wrap: wrap; margin: 10px 0; }
+.member-slot { width: 80px; height: 80px; border: 2px solid #444; border-radius: 4px; display: flex; align-items: center; justify-content: center; background: #1a1a1a; }
+.member-slot img { width: 70px; height: 70px; object-fit: cover; }
+.member-slot.empty { font-size: 30px; color: #666; }
+.member-slot.captain { border-color: #ffc107; }
+.team-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin: 2px; }
+.team-desc { margin-top: 10px; color: #ccc; font-size: 14px; }
+
+/* 篩選/搜索樣式 */
+.filter-bar { background: #2d2d2d; padding: 15px; border-radius: 8px; margin: 20px 0; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.filter-item { flex: 1; min-width: 120px; }
+.search-input { flex: 2; min-width: 200px; }
+
+/* 彈窗樣式 */
+.modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; z-index: 999; }
+.modal-content { background: #2d2d2d; padding: 20px; border-radius: 8px; max-width: 90%; width: 800px; max-height: 90vh; overflow-y: auto; }
+.close-modal { float: right; font-size: 20px; cursor: pointer; }
+
+/* 權限隱藏 */
+.admin-only { display: none; }
+.user-only { display: none; }
